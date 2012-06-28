@@ -7,7 +7,6 @@
 //
 
 #import "TextBoxLayer.h"
-#import "uthash.h"
 
 @implementation TextBoxLayer
 
@@ -157,6 +156,13 @@
 	return currentPage;
 }
 
+typedef struct _FontDefHashElement
+{
+NSUInteger		key;		// key. Font Unicode value
+ccBMFontDef		fontDef;	// font definition
+UT_hash_handle	hh;
+} tFontDefHashElement;
+
 - (int)calculateStringSize:(NSString *)txt {
 	
 	CCBMFontConfiguration *conf = FNTConfigLoadFile(TEXT_FONT_FILE);
@@ -166,9 +172,9 @@
 	for (int i = 0; i < [txt length] / [CCDirector sharedDirector].contentScaleFactor; i++) {
 		
 		int c = [txt characterAtIndex:i];
-		ccBMFontDef *def = NULL;
-        HASH_FIND_INT(conf->BMFontHash_,&c,def);
-		totalSize += def->xAdvance;
+        tFontDefHashElement *def = NULL;
+        HASH_FIND_INT(conf->fontDefDictionary_,&c,def);
+		totalSize += def->fontDef.xAdvance;
 	}
 	
 	return totalSize;

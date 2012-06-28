@@ -52,8 +52,8 @@
         textBoxView.center = ccp( size.width /2 , size.height/2 );
         textBoxView.delegate = self;
         
-        CCMenuItemFont *itemLayer = [CCMenuItemFont itemFromString:@"Layer" target:self selector:@selector(onLayer:)];
-        CCMenuItemFont *itemView = [CCMenuItemFont itemFromString:@"View" target:self selector:@selector(onView:)];
+        CCMenuItemFont *itemLayer = [CCMenuItemFont itemWithString:@"Layer" target:self selector:@selector(onLayer:)];
+        CCMenuItemFont *itemView = [CCMenuItemFont itemWithString:@"View" target:self selector:@selector(onView:)];
         
         menu = [CCMenu menuWithItems:itemLayer, itemView, nil];
         [menu alignItemsHorizontallyWithPadding:20];
@@ -92,7 +92,7 @@
 }
 
 - (void)onView:(id)sender {
-    [[CCDirector sharedDirector].openGLView addSubview:textBoxView];
+    [[CCDirector sharedDirector].view addSubview:textBoxView];
     isView = YES;
     [menu removeFromParentAndCleanup:YES];
 }
