@@ -156,13 +156,6 @@
 	return currentPage;
 }
 
-typedef struct _FontDefHashElement
-{
-NSUInteger		key;		// key. Font Unicode value
-ccBMFontDef		fontDef;	// font definition
-UT_hash_handle	hh;
-} tFontDefHashElement;
-
 - (int)calculateStringSize:(NSString *)txt {
 	
 	CCBMFontConfiguration *conf = FNTConfigLoadFile(TEXT_FONT_FILE);
