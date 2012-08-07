@@ -3,14 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		15C2B81F12E766D500B08A5B /* TextBoxLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C2B81E12E766D500B08A5B /* TextBoxLayer.m */; };
 		15C2B85012E767D600B08A5B /* arial16.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 15C2B84E12E767D600B08A5B /* arial16.fnt */; };
 		15C2B85112E767D600B08A5B /* arial16.png in Resources */ = {isa = PBXBuildFile; fileRef = 15C2B84F12E767D600B08A5B /* arial16.png */; };
-		15F8F10B143BF1700026D795 /* TextBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F8F10A143BF1700026D795 /* TextBoxView.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1F3B9A2D0EF2145700286867 /* TextBoxLayerSampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B9A2B0EF2145700286867 /* TextBoxLayerSampleAppDelegate.m */; };
 		506EDB88102F4C4000A389B3 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 506EDB87102F4C4000A389B3 /* libz.dylib */; };
@@ -37,13 +35,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		15C2B81D12E766D500B08A5B /* TextBoxLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextBoxLayer.h; sourceTree = "<group>"; };
-		15C2B81E12E766D500B08A5B /* TextBoxLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextBoxLayer.m; sourceTree = "<group>"; };
 		15C2B84E12E767D600B08A5B /* arial16.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = arial16.fnt; sourceTree = "<group>"; };
 		15C2B84F12E767D600B08A5B /* arial16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arial16.png; sourceTree = "<group>"; };
-		15F8F108143BF0320026D795 /* TextBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextBox.h; sourceTree = "<group>"; };
-		15F8F109143BF1700026D795 /* TextBoxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextBoxView.h; sourceTree = "<group>"; };
-		15F8F10A143BF1700026D795 /* TextBoxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextBoxView.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* TextBoxLayerSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextBoxLayerSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F3B9A2B0EF2145700286867 /* TextBoxLayerSampleAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TextBoxLayerSampleAppDelegate.m; path = Classes/TextBoxLayerSampleAppDelegate.m; sourceTree = SOURCE_ROOT; };
 		1F3B9A2C0EF2145700286867 /* TextBoxLayerSampleAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TextBoxLayerSampleAppDelegate.h; path = Classes/TextBoxLayerSampleAppDelegate.h; sourceTree = SOURCE_ROOT; };
@@ -143,11 +136,6 @@
 		2D500B1D0D5A766B00DBA0E3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				15F8F108143BF0320026D795 /* TextBox.h */,
-				15C2B81D12E766D500B08A5B /* TextBoxLayer.h */,
-				15C2B81E12E766D500B08A5B /* TextBoxLayer.m */,
-				15F8F109143BF1700026D795 /* TextBoxView.h */,
-				15F8F10A143BF1700026D795 /* TextBoxView.m */,
 				E0F80F5D120A0182005866B8 /* GameConfig.h */,
 				506EDC2F102F528A00A389B3 /* HelloWorldScene.h */,
 				506EDC30102F528A00A389B3 /* HelloWorldScene.mm */,
@@ -203,8 +191,11 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TextBoxLayerSample" */;
-			compatibilityVersion = "Xcode 3.1";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -253,8 +244,6 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1F3B9A2D0EF2145700286867 /* TextBoxLayerSampleAppDelegate.m in Sources */,
 				506EDC31102F528A00A389B3 /* HelloWorldScene.mm in Sources */,
-				15C2B81F12E766D500B08A5B /* TextBoxLayer.m in Sources */,
-				15F8F10B143BF1700026D795 /* TextBoxView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,11 +254,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TextBoxLayerSample_Prefix.pch;
@@ -278,16 +267,17 @@
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				LIBRARY_SEARCH_PATHS = ../../iPad_Omino/SharedLibs/Cocos/lib;
+				LIBRARY_SEARCH_PATHS = (
+					../../iPad_Omino/SharedLibs/Cocos/lib,
+					../../iPad_Omino/SharedLibs/CocosTools/lib,
+				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
-					"-all_load",
-					"-ObjC",
 					"-lCocos",
+					"-lCocosTools",
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = TextBoxLayerSample;
-				USER_HEADER_SEARCH_PATHS = "../../iPad_Omino/SharedLibs/Cocos/include/**";
+				USER_HEADER_SEARCH_PATHS = "../../iPad_Omino/SharedLibs/Cocos/include/** ../../iPad_Omino/SharedLibs/CocosTools/include/**";
 				WARNING_CFLAGS = "-Wall";
 			};
 			name = Debug;
@@ -296,10 +286,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TextBoxLayerSample_Prefix.pch;
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
@@ -307,16 +297,17 @@
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				LIBRARY_SEARCH_PATHS = ../../iPad_Omino/SharedLibs/Cocos/lib;
+				LIBRARY_SEARCH_PATHS = (
+					../../iPad_Omino/SharedLibs/Cocos/lib,
+					../../iPad_Omino/SharedLibs/CocosTools/lib,
+				);
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
-					"-all_load",
-					"-ObjC",
 					"-lCocos",
+					"-lCocosTools",
 				);
-				PREBINDING = NO;
 				PRODUCT_NAME = TextBoxLayerSample;
-				USER_HEADER_SEARCH_PATHS = "../../iPad_Omino/SharedLibs/Cocos/include/**";
+				USER_HEADER_SEARCH_PATHS = "../../iPad_Omino/SharedLibs/Cocos/include/** ../../iPad_Omino/SharedLibs/CocosTools/include/**";
 				WARNING_CFLAGS = "-Wall";
 			};
 			name = Release;
@@ -340,7 +331,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
 				ONLY_ACTIVE_ARCH = YES;
-				PREBINDING = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -360,7 +350,6 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
-				PREBINDING = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
