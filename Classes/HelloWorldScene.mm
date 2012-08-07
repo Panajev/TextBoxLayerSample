@@ -44,7 +44,7 @@
         
         NSString *txt = @"This is a purposefully long text so as to test the wrapping functionality of the TextBoxLayer, as well as the multiple pages. That's it! This is the end, my only friend, the end.";
         
-		textBox = [[TextBoxLayer alloc] initWithColor:[UIColor blueColor] width:200 height:80 padding:10 speed:0.01f text:txt useTTF:YES];
+		textBox = [[TextBoxLayer alloc] initWithColor:[UIColor blueColor] width:200 height:80 padding:10 speed:0.01f text:txt useTTF:NO];
         textBox.position =  ccp( size.width /2 , size.height/2 );
 		textBox.delegate = self;
         
